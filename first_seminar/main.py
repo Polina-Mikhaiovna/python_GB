@@ -38,7 +38,12 @@ while ticket > 0:
 		firstPart = summa
 		summa = 0
 
-print(firstPart, summa)
+if firstPart == summa:
+	print("yes")
+else:
+	print("no")
+
+
 
 # 8: Требуется определить, можно ли от шоколадки размером n × m долек
 # отломить k долек, если разрешается сделать один разлом по
@@ -51,6 +56,6 @@ m = int(input())
 print("Сколько кусочков отломить: ")
 k = int(input())
 if ((k % m) == 0) or ((k % n) == 0) or (k == n) or (k == m):
-	print("YES")
+	print("yes")
 else:
-	print("NO")
+	print("no")
