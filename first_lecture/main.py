@@ -27,7 +27,7 @@ for i in range(5):
 
 
 text = 'СЪешЬ ещё'
-print(f"len({text}) ->", len(text))
+print(f"len({text} ->", len(text))
 print(f"'ещё' in {text}) ->", 'ещё' in text)
 print(f"{text}.lower() ->", text.lower())
 print(f"{text}.upper() ->", text.upper())
