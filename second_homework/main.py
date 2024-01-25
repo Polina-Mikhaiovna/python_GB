@@ -1,4 +1,5 @@
 import math
+import datetime
 '''
 На столе лежат n монеток. Некоторые из монеток лежат вверх решкой, 
 а некоторые – гербом. Ваша задача - определить минимальное количество
@@ -40,33 +41,46 @@ print(min)
 print("#############################################################")
 print("##### Нахождение пары чисел по их сумме и произведению ######")
 print("#############################################################\n")
+
 print("Введите сумму пары чисел")
 s = int(input())
 print("Введите произведение пары чисел")
 p = int(input())
 
-
+start = datetime.datetime.now()
 # a * x**2 + bx + c = 0
 # => 
 # x**2 - 5x - 6 = 0
-
 # D = b**2 - 4 * a * c
 # D = s**2 - 4 * 1 * p  => 5**2 - 4 * 1 * 6 = 1
 
 D = (s**2) - (4 * 1 * p)
 print(f"Дискриминант = {D}")
-i = 1
-
-#for i in range(i * i <= D):
-#	print(i)
-
 sqrt_D = D ** (0.5)
-#print(sqrt_D)
-
 # x = -b +/- sqrt(D) / 2 * a
-
 x = (s + sqrt_D) / 2
+
+finish = datetime.datetime.now()
 
 print("Ответ (корни квадратного уравнения):", int(s - x), int(x))
 
+'''
+s = 197
+p = 9702
+# Введите ваше решение ниже
+solutions = []
+for i in range(1, 10001):
+    for j in range(1, 10001):
+        if s == i + j and p == i * j:
+            solutions.append((min(i, j), max(i, j)))
+solutions = list(set(solutions))
+
+for solution in solutions:
+    print(solution[0], solution[1])
+'''
+print("\nВремя работы: "  + str(finish - start))
+'''
+Задача 14: Требуется вывести все целые степени двойки (т.е. числа
+вида 2 k), не превосходящие числа N.
+'''
 
