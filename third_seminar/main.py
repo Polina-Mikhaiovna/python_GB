@@ -33,6 +33,8 @@ print(reverse(list1, 0, len(list1) - 1))
 
 print(reverse(list1, 0, k-1))
 
+# !!!!!!!!!!! на жанном этапе не работает, дописать
+
 
 
 
