@@ -33,5 +33,3 @@ while i <= n:
 	print(an)
 	i += 1
 
-
-#an = a1 + (n-1) * d
